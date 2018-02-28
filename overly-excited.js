@@ -13,6 +13,9 @@ function addExcitement (theWordArray) {
     let currentWordInArray = theWordArray[i];
     sentence += " " + currentWordInArray;
     console.log(sentence);
+        if (i % 3) {
+            sentence += "!";
+        }
     }
 }
 
