@@ -2,17 +2,19 @@
 
 // Creates a variable containing a sentence in a single string
 let sentence = "The walrus danced through the trees in the light of the moon.";
-// Creates a new variable from the "sentence" variable with the ".split()" method applied, spliting the string into an array containing the individual words. The " " acts as a seperator.
-let theWordArray = sentence.split(" ");
-console.log(theWordArray);
-/*
-    The addExcitement function should be an impure function, and accept
-    the array as the sole argument. It should iterate over the array
-    and output the words to the browser console.
-*/
-function addExcitement (theWordArray) {
 
+// Redfines the value of the "sentence" variable with the ".split()" method applied, spliting the string into an array containing the individual words. The " " acts as a seperator.
+sentence = sentence.split(" ");
+
+// The addExcitement function should be an impure function, and accept the array as the sole argument.
+// It should iterate over the array and output the words to the browser console.
+function addExcitement (theWordArray) {
+    for (let i = 0; i < theWordArray.length; i++) {
+    let currentWordInArray = theWordArray[i];
+    sentence += " " + currentWordInArray;
+    console.log(sentence);
+    }
 }
 
-// Invoke the function and pass in the array
+// // Invoke the function and pass in the array
 addExcitement(sentence);
