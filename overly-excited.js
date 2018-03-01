@@ -10,7 +10,7 @@ edgarAllenPoeQuote = edgarAllenPoeQuote.split(" ");
 
 // The addExcitement function should be an impure function, and accept the array as the sole argument.
 // It should iterate over the array and output the words to the browser console.
-function addExcitement (theWordArray, userInput) {
+let addExcitement = (theWordArray, userInput) => {
     let space = "";
     let specialChar = prompt("Please enter a special character or punctuation mark.");
     let singleChar = specialChar;
